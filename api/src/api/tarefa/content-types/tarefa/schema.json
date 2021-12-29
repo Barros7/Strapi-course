@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tarefas",
+  "info": {
+    "singularName": "tarefa",
+    "pluralName": "tarefas",
+    "displayName": "Tarefa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Inicio": {
+      "type": "date"
+    },
+    "Fim": {
+      "type": "date"
+    },
+    "Descricao": {
+      "type": "richtext",
+      "required": true
+    },
+    "status": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::status.status",
+      "inversedBy": "tarefas"
+    }
+  }
+}
