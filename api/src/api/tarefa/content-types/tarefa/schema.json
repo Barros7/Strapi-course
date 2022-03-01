@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tarefa",
     "pluralName": "tarefas",
-    "displayName": "Tarefa"
+    "displayName": "Tarefa",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -31,6 +32,14 @@
       "relation": "manyToOne",
       "target": "api::status.status",
       "inversedBy": "tarefas"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

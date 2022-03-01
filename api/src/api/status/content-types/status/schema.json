@@ -4,7 +4,8 @@
   "info": {
     "singularName": "status",
     "pluralName": "statuses",
-    "displayName": "Status"
+    "displayName": "Status",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tarefa.tarefa",
+      "mappedBy": "status"
+    },
+    "produtos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::produto.produto",
       "mappedBy": "status"
     }
   }
