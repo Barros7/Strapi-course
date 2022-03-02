@@ -1,0 +1,66 @@
+footer {
+    background: var(--base-color);
+    margin-top: 41rem;
+    padding: 2.5rem 0;
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    padding: 0.5rem;
+    clip-path: circle();
+}
+
+footer .social a {
+    margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .instagram i {
+    background-color:rgb(110, 0, 0);
+}
+
+footer .facebook i {
+    background-color: rgb(0, 0, 255);
+}
+
+footer .youtube i {
+    background-color: rgb(255, 0, 0);
+}
+
+footer .social a:hover {
+    transform: translateY(-8px);
+}
+
+/* Back to top button */
+.back-to-top {
+    background: var(--base-color);
+    color: var(--body-color);
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem;
+    clip-path: circle();
+    font-size: 1.5rem;
+    line-height: 0; /*
+    visibility: hidden;
+    opacity: 0; */
+    transition: 0.3s;
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+}
